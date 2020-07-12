@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+		<link href="main.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+		<title>Sydney Berry</title>
+	</head>
+
+	<body class="text-gray-800">
+ 
+
+		<nav class="flex items-center justify-between flex-wrap bg-white p-6  w-full z-10 pin-t">
+			<div class="flex items-center flex-no-shrink mr-6">
+				<span class="text-2xl pl-2" style="font-weight: 700;"> S. J. Berry</span>
+			</div>
+
+			<div class="block md:hidden">
+				<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded border-grey-dark hover:text-blue-500 hover:border-blue-500">
+					<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+				</button>
+			</div>
+
+			<div class="w-full flex-grow md:flex md:items-center md:w-auto hidden md:block pt-6 md:pt-0" id="nav-content">
+				<ul class="list-reset md:flex justify-end flex-1 items-center">
+					<li class="mr-3">
+						<a class="inline-block no-underline hover:text-blue-500 py-2 px-4" href="#">about</a>
+					</li>
+					<li class="mr-3">
+						<a class="inline-block no-underline hover:text-blue-500 py-2 px-4" href="#">resume</a>
+					</li>
+
+				</ul>
+			</div>
+		</nav>	
+
+		
+
+
+		<br/><br/>
+			<div class="lg:flex px-6 lg:pr-8">
+				<div class="w-full lg:w-2/5">
+					<img class="w-3/5 md:w-2/5 lg:w-3/5 rounded-full mx-auto lg:float-right lg:mr-10" src="assets/plants.jpg" alt="Photo of Sydney smiling">
+				</div>
+				<div class="w-full lg:w-3/5 text-center lg:text-left lg:self-center">
+					<h1 class="text-6xl" style="font-weight: bold;">Hi, I'm Sydney</h1>
+					<h3 class="text-lg" style="font-weight: normal;">computer science student, design enthusiast, and new roller skater</h3>
+					<h3 class="text-lg" style="font-weight: 200; font-style: italic;">currently @ Daktronics, previously @ Bank of America</h3>
+				</div>
+			</div>
+		<br/><br/>
+
+
+		<div class="overview pt-10 pb-10">
+			<div class="max-w-md md:max-w-xl lg:max-w-3xl rounded overflow-hidden shadow-lg bg-white mx-auto">
+  				<div class="px-6 py-4">
+    				<div class="font-bold text-xl mb-2">
+    					a quick intro:
+    				</div>
+					<p class="text-gray-700 text-base">
+  						Hi, I'm Sydney and I'm a rising forth-year computer science student at South Dakota State University with minor in graphic design and software engineering. 
+  						
+					</p>
+  				</div>
+				<div class="px-6 py-4">
+				    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#C++</span>
+				    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#JavaScript</span>
+				    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#ASP.NET</span>
+				    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#AdobePhotoshop</span>
+
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+		</script>
+	</body>
+</html>
